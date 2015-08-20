@@ -1,0 +1,27 @@
+{
+  "name": "grunt-karma-protractor",
+  "version": "1.0.0",
+  "description": "Testing template for Karma and Protractor test suites",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sam Clarke",
+  "license": "ISC",
+  "dependencies": {
+    "node-static": "^0.7.7"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-karma": "^0.12.0",
+    "grunt-nodemon": "^0.4.0",
+    "grunt-protractor-runner": "^2.1.0",
+    "karma": "^0.13.9",
+    "karma-jasmine": "^0.3.6",
+    "karma-ng-html2js-preprocessor": "^0.1.2",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "ng-html2js": "^2.0.0",
+    "phantomjs": "^1.9.18",
+    "protractor": "^2.1.0"
+  }
+}
