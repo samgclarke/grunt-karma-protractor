@@ -9,10 +9,11 @@ module.exports = function(config){
       "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.min.js",
       "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.min.js",
       "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-mocks.js",
-      // test files
+      // project files
       "app/js/app.js",
       "app/js/test.controller.js",
       "app/js/test.directive.js",
+      // test files
       "karma/test.spec.js",
       // where to find templates
       'app/partials/*.html', 
@@ -43,11 +44,14 @@ module.exports = function(config){
     logLevel: config.LOG_INFO,
  
     // map of preprocessors that is used mostly for plugins
+    // provide full or relative path to partials
     preprocessors: {
       'app/partials/*.html':'ng-html2js',
     },
 
     ngHtml2JsPreprocessor: {
+      // strip path prefixes of preprocessors object, so that path is the same
+      // as loaded in templateUrl declarations of project
       stripPrefix: "app/",
       moduleName: 'templates'
     },

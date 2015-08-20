@@ -20,15 +20,6 @@ module.exports = function(grunt) {
       },
       run: {}
     },
-    nodestatic: {
-      server: {
-        options: {
-          port: 8080,
-          base: '.',
-          keepAlive: true,
-        }
-      }
-    }
   });
   //grunt.loadNpmTasks('grunt-nodemon');
   grunt.loadNpmTasks('grunt-karma');
